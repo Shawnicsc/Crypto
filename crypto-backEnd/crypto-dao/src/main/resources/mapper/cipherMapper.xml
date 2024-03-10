@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cryptodao.mapper.cipherMapper">
+
+    <resultMap id="BaseResultMap" type="com.cryptodao.domain.cipher">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="plainText" column="plainText" jdbcType="VARCHAR"/>
+            <result property="cipherText" column="cipherText" jdbcType="VARCHAR"/>
+            <result property="alg" column="alg" jdbcType="VARCHAR"></result>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,plainText,cipherText,alg
+    </sql>
+</mapper>
